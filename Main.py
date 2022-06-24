@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-
 search_item = input("What item do you want to search for? ")
 search_item = re.sub("\s","+",search_item)
 
@@ -42,3 +41,4 @@ for item in sorted_items:
     print(f"${item[1]['price']}")
     print(item[1]['link'])
     print("----------------------------------")
+
